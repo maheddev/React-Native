@@ -1,7 +1,7 @@
 const { https } = require('firebase-functions');
 const { Configuration,OpenAIApi } = require('openai');
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey: 'YOUR API KEY',
 });
 const openai = new OpenAIApi(configuration);
 exports.getDatafromServer  = https.onCall((data) => {
